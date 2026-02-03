@@ -12,18 +12,9 @@ This workflow automates the monitoring of environmental compliance regulations b
 
 ## Workflow Architecture
 
-```
-┌─────────────────┐     ┌─────────────┐     ┌─────────┐     ┌─────────────────┐
-│ Schedule Trigger│────▶│  RSS Feed   │────▶│  Limit  │────▶│  Gemini AI      │
-│   (Daily 9AM)   │     │   Reader    │     │ (Top 3) │     │  Analysis       │
-└─────────────────┘     └─────────────┘     └─────────┘     └────────┬────────┘
-                                                                     │
-                                                                     ▼
-┌─────────────────┐     ┌─────────────┐     ┌─────────┐     ┌─────────────────┐
-│  Gmail Alert    │◀────│   Google    │◀────│   If    │◀────│  JSON Parser    │
-│  Notification   │     │   Sheets    │     │Urgency>0│     │  (JavaScript)   │
-└─────────────────┘     └─────────────┘     └─────────┘     └─────────────────┘
-```
+<p align="center">
+  <img src="./images/workflow.png" width="900" alt="PFAS Compliance Monitoring Bot Workflow Architecture">
+</p>
 
 ## Features
 
