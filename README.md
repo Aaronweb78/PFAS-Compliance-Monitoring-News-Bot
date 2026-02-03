@@ -114,11 +114,6 @@ The email alert includes:
 ## Author
 
 **Aaron Chopade**
-
-## License
-
-MIT License - Feel free to use and modify for your own compliance monitoring needs.
-
 ---
 
 *Built with [n8n](https://n8n.io/) - the workflow automation platform*
